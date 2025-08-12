@@ -62,14 +62,14 @@ At that point we crossed check our codes to make sure that we arrive at the same
 As you may imagine this took a considerable time to fix implementation errors that
 affected the results. The issue with numerical simulations is that you may get results
 that seem right but are not because of some minor thing like a typo in a contant or
-a sign. And those errors are hard to detect with lines of code that comprise the
-application.
+a sign. And those errors are hard to detect with the number of lines of code that
+comprise the numeric application.
 
 That experience taught me how to tackle hard problems by breaking them down into smaller
 units and to write code to test those units for correctness. I also learned the
 importance of teamwork, for I would not have been able to solve the problem on my own
-in a relatively short time, in just a couple of months, if it weren't for Gerardo's
-input. All of this probably sounds familiar but I don't think there's another way to
-get things done other than work on it everyday, communicate ideas with your peers,
-learn things as you go, and most importantly believe if your ability to solve a
+in a relatively short time (just a couple of months) if it weren't for Gerardo's
+input. All of this probably sounds familiar to you but I don't think there's another way
+to get things done other than work on it everyday, communicate ideas with your peers,
+learn things as you go, and most importantly believe in your ability to solve a
 problem that at first migth seem daunting.
