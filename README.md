@@ -42,3 +42,34 @@ that I should test my code often to fix bugs early on, for I did not have any ot
 experiences with courses about software development and best practices. I remember
 that I read a little about that in a book we had about Matlab at the office and probably
 by heeding Gerardo's advice.
+
+After writing the code that the sets the thermodynamic properties and the dynamic
+properties of the fluids that pass through the system I had to express the model
+equations (conservation of chemical species and energy) into the form that Matlab's
+numerical optimization solver expects. The experience that I had with the solution of
+engineering thermodynamics problems allowed me to write the code with confidence. One
+could think that once one has written down all the equations into a way that can be
+handled by the numerical solver that the problem has been practically solved but that's
+not the case. We were dealing with a non-linear model and that meant that the solver
+can still fail to converge to a solution if the starting point (or initial guess) is
+not close enough. As a result of that we had to break up the solution into stages,
+first obtain an approximate solution without the intricancies of the non-linear model and
+then hope that that solution is good enough for a starting point for the non-linear
+model. And from there we applied a numerical technique known as homotopy continuation
+to arrive at other solutions and check for process singularities.
+
+At that point we crossed check our codes to make sure that we arrive at the same results.
+As you may imagine this took a considerable time to fix implementation errors that
+affected the results. The issue with numerical simulations is that you may get results
+that seem right but are not because of some minor thing like a typo in a contant or
+a sign. And those errors are hard to detect with lines of code that comprise the
+application.
+
+That experience taught me how to tackle hard problems by breaking them down into smaller
+units and to write code to test those units for correctness. I also learned the
+importance of teamwork, for I would not have been able to solve the problem on my own
+in a relatively short time, in just a couple of months, if it weren't for Gerardo's
+input. All of this probably sounds familiar but I don't think there's another way to
+get things done other than work on it everyday, communicate ideas with your peers,
+learn things as you go, and most importantly believe if your ability to solve a
+problem that at first migth seem daunting.
